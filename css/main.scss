@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+// *{
+//     border: 1px dashed green;
+// }
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins","arial";
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    background: #060b53;
+    a {
+        color: #ffffff;
+    }
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    padding: 2em;
+    .logo {
+        color:#fafafa;
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        a{
+            display: block;
+            padding: 0 1em;
+            margin-left: 9px;
+        }
+    }
+}
+
+.social-icons {
+    display: none;
+}
+
+.content {
+    display: grid;
+    background: #081d5f;
+    color:white;
+    text-align: center;
+    .header {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    p{
+        position: relative;
+        top: -0.8em;
+        font-size: 3vw;
+    }
+    a.resume {
+        margin: auto;
+        padding:0.5em 0.8em;
+        border-radius:0.2em;
+        min-width: 20vw;
+        box-sizing: border-box;
+        text-align:center;
+        background-color:#3369ff;
+        font-weight:400;
+        color:#FFFFFF;
+        text-decoration:none;
+        box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    }
+    .social ul{
+        display: flex;
+        justify-content: center;
+        a {
+            display: inline-flex;
+            padding: 1em 0.7em;
+            font-size: 26px;
+        }
+        a:hover {
+            opacity: 0.4;
+        }
+        
+    }
+    .scroll {
+        margin: auto;
+        width: 30px;
+    }
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    svg {
+        position: relative;
+        max-width: 35em;
+        top: -3em;
+        height: auto;
+        padding: 2em;
+    }
+}
+.dev-icons {
+    display: grid;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        position: relative;
+        top: -2em;
+    }
+    ul{
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top: -4em;
+       flex-wrap: wrap;
+       li {
+           font-size: 8vw;
+           margin-top: 4px;
+           color: white;
+           flex: 0 0 21%;
+       }
+   }
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+.projects {
+    background-color: #ebebeb;
+    display: grid;
+    text-align: center;
+    color: #111d57;
+    svg {
+        position: relative;
+        width: 70vw;
+        height: auto;
+        padding: 0 0 0 3em;
+    }
+    .project-container {
+        .project-header {
+            position: relative;
+            color: #690975;
+            font-size: 32px;
+        }
+        p {
+            font-size: 3vw;
+            font-weight: bold;
+        }
+        img {
+
+           width: 60vw;
+        }
+    }
+}
