@@ -3,7 +3,9 @@
 // *{
 //     border: 1px dashed green;
 // }
-
+:root{
+    --primary-color : #081d5f;
+}
 
 body {
     height: 100vh;
@@ -33,16 +35,18 @@ header{
     display:flex;
     justify-content: space-between;
     padding: 2em;
+    font-size: 3vw;
     .logo {
         color:#fafafa;
         font-weight: bold;
+        font-size: 3vw;
     }
     ul {
         display: flex;
         a{
             display: block;
-            padding: 0 1em;
-            margin-left: 9px;
+            padding-left: 2em;
+            margin-left: .3em;
         }
     }
 }
@@ -152,28 +156,65 @@ header{
 
 .projects {
     background-color: #ebebeb;
-    display: grid;
     text-align: center;
     color: #111d57;
     svg {
         position: relative;
+        top: -3em;
+        left: -2em;
         width: 70vw;
         height: auto;
-        padding: 0 0 0 3em;
     }
     .project-container {
         .project-header {
             position: relative;
-            color: #690975;
-            font-size: 32px;
+            top: -4vh;
+            color: #2c1169;
+            font-size: 6vw;
         }
         p {
+            position: relative;
+            top: -4vh;
             font-size: 3vw;
             font-weight: bold;
         }
         img {
+            position: relative;
+            top: -4vw;
+            width: 60vw;
+            padding: 1em;
+        }
+        a {
+            display: block;
+            position: relative;
+            color: var(--primary-color);
+            padding: 1em;
+            top: -2em;
+            text-align: center;
+        }
+    }
+}
 
-           width: 60vw;
+.contact {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: auto;
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        align-items: center;
+        .contact-icons {
+            text-decoration: none;
+            margin-left: 1em;
+            font-size: 1.5em;
+            color: white;
+
+        }
+        .contact-icons:hover{
+            color:rebeccapurple;
         }
     }
 }
