@@ -50,7 +50,6 @@ header{
         }
     }
 }
-
 .social-icons {
     display: none;
 }
@@ -217,4 +216,27 @@ header{
             color:rebeccapurple;
         }
     }
+    #heart {
+        display: inline-block;
+        position: relative;
+    }
+}
+
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(502px, 697px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(502px, 730px);
+    }
+}
+
+@media only screen and (min-width: 800px){
+
 }

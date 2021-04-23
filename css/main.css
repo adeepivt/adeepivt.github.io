@@ -346,4 +346,37 @@ header a {
 .contact ul .contact-icons:hover {
   color: rebeccapurple;
 }
+
+.contact #heart {
+  display: inline-block;
+  position: relative;
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(502px, 697px);
+            transform: translate(502px, 697px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(502px, 730px);
+            transform: translate(502px, 730px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(502px, 697px);
+            transform: translate(502px, 697px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(502px, 730px);
+            transform: translate(502px, 730px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
