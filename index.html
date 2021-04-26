@@ -10,6 +10,22 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+    <div class="splash">
+        <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" width="344" height="330" viewBox="0 0 344 330">
+            <g id="Group_2" data-name="Group 2" transform="translate(-796 -354)">
+              <g id="Group_1" data-name="Group 1" transform="translate(307 84)">
+                <line class="transition3" id="Line_2" data-name="Line 2" x1="73.302" y2="101.77" transform="translate(585.536 384.44)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+                <line class="transition3" id="Line_3" data-name="Line 3" x2="18.339" y2="128.512" transform="matrix(0.755, -0.656, 0.656, 0.755, 585.871, 392.451)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+                <line class="transition3" id="Line_4" data-name="Line 4" y2="72.045" transform="translate(683.851 405.16)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+                <line class="transition3" id="Line_5" data-name="Line 5" y2="75.261" transform="translate(712.063 384.576)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+                <line class="transition4" id="Line_6" data-name="Line 6" y2="155.594" transform="translate(777.891 377.5) rotate(90)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+                <line class="transition4" id="Line_7" data-name="Line 7" y2="155.594" transform="translate(700.094 492) rotate(90)" fill="none" stroke="#171563" stroke-linecap="round" stroke-width="15"/>
+              </g>
+            </g>
+          </svg>
+    </div>
+
     <header>
         <div class="nav-bar">
             <a href="" class="logo"> < IVT /></a>
@@ -327,13 +343,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
 
     <script>
+        const splash = document.querySelector('.splash');
+        document.addEventListener('DOMContentLoaded', (e)=>{
+            setTimeout(()=>{
+                splash.classList.add('display-none');
+            },3000)
+        })
+
         gsap.registerPlugin(ScrollTrigger);
         var t1 = gsap.timeline()
 
         t1.from('.content',{
             y: '-30%',
             opacity: 0,
-            duration: 2,
+            duration: 4,
             ease: Power4.easeout
         })
         t1.from('.stagger1',{
@@ -365,10 +388,30 @@
             stagger: .3
         })
 
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: '.transition3',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1,
+            stagger: .3
+        })
+
+        gsap.from(".transition4", {
+            scrollTrigger: {
+                start: 'top bottom',
+            },
+            x: -50,
+            opacity: 0,
+            duration: 2,
+            stagger: .3
+        })
+
          var heart = document.getElementById("heart");
          TweenMax.fromTo(heart,.6,
          {
-           visible:true,
+        //    visible:true,
           scale:1
          },
          {
