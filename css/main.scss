@@ -34,12 +34,11 @@ header{
 .nav-bar {
     display:flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
     font-size: 3vw;
     .logo {
         color:#fafafa;
         font-weight: bold;
-        font-size: 3vw;
     }
     ul {
         display: flex;
@@ -264,5 +263,71 @@ header{
 }
 
 @media only screen and (min-width: 800px){
+    #skills{
+        display: grid;
+        grid-template-columns: 40% auto;
+        height: 80vh;
+        align-items: center;
+        .skills{
+            svg {
+                position: relative;
+                min-width: 50vw;
+                top: -3em;
+                height: auto;
+                margin-left: 10em;
+            }
+        }
+        .dev-icons {
+            display: block;
+            padding: 6em;
+            margin-left: 3em;
+            ul{
+               li {
+                   font-size: 6vw;
+                   flex: 0 0 24%;
+                   cursor: pointer;
+                }
+                li i:hover{
+                    color: var(--primary-color);
+                }
+           }
+        }
+    }
 
+    .projects{
+        display: grid;
+        grid-template-columns: 50% auto;
+        height: 80vh;
+        padding: 4em;
+        align-items: center;
+        svg {
+            position: relative;
+            top: 3em;
+            width: 50vw;
+            height: auto;
+    }
+    .project-container {
+        .project-header {
+            position: relative;
+            top: -4vh;
+            color: #2c1169;
+            font-size: 4vw;
+        }
+        p {
+            position: relative;
+            top: -4vh;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+        img {
+            position: relative;
+            top: -4vw;
+            width: 50vh;
+            padding: 4em;
+        }
+        a {
+            display: inline;
+        }
+    }
+    }
 }

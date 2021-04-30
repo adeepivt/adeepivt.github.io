@@ -34,14 +34,13 @@ header a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
   font-size: 3vw;
 }
 
 .nav-bar .logo {
   color: #fafafa;
   font-weight: bold;
-  font-size: 3vw;
 }
 
 .nav-bar ul {
@@ -415,6 +414,79 @@ header a {
   to {
     -webkit-transform: translate(502px, 730px);
             transform: translate(502px, 730px);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    height: 80vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #skills .skills svg {
+    position: relative;
+    min-width: 50vw;
+    top: -3em;
+    height: auto;
+    margin-left: 10em;
+  }
+  #skills .dev-icons {
+    display: block;
+    padding: 6em;
+    margin-left: 3em;
+  }
+  #skills .dev-icons ul li {
+    font-size: 6vw;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+    cursor: pointer;
+  }
+  #skills .dev-icons ul li i:hover {
+    color: var(--primary-color);
+  }
+  .projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    height: 80vh;
+    padding: 4em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects svg {
+    position: relative;
+    top: 3em;
+    width: 50vw;
+    height: auto;
+  }
+  .projects .project-container .project-header {
+    position: relative;
+    top: -4vh;
+    color: #2c1169;
+    font-size: 4vw;
+  }
+  .projects .project-container p {
+    position: relative;
+    top: -4vh;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  .projects .project-container img {
+    position: relative;
+    top: -4vw;
+    width: 50vh;
+    padding: 4em;
+  }
+  .projects .project-container a {
+    display: inline;
   }
 }
 /*# sourceMappingURL=main.css.map */
