@@ -24,18 +24,18 @@ a {
     text-decoration: none;
 }
 
-header{
+.nav-bar{
     background: #060b53;
     a {
         color: #ffffff;
     }
 }
 
-.nav-bar {
+header {
     display:flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1em;
-    font-size: 3vw;
     .logo {
         color:#fafafa;
         font-weight: bold;
@@ -114,6 +114,7 @@ header{
 .dev-icons {
     display: grid;
     justify-content: center;
+    font-size: 3vh;
     h1 {
         text-align: center;
         position: relative;
@@ -330,4 +331,37 @@ header{
         }
     }
     }
+}
+
+@media only screen and (min-width: 1050px){
+    .main {
+        height: 90vh;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header {
+            background: #060b53;
+        }
+        section {
+            padding: 4em;
+        }
+
+        .social-icons {
+            display: block;
+            padding: 2em 4em 2em 7em;
+            margin-left: 3em;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 7em;
+            }
+        }
+    }
+
+    
 }
