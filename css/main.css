@@ -80,11 +80,10 @@ header ul a {
   font-size: 3vw;
 }
 
-.content a.resume {
+.content .resume {
   margin: auto;
   padding: 0.5em 0.8em;
   border-radius: 0.2em;
-  min-width: 20vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -120,6 +119,10 @@ header ul a {
 .content .scroll {
   margin: auto;
   width: 30px;
+}
+
+.main-svg {
+  display: none;
 }
 
 .skills {
@@ -496,6 +499,46 @@ header ul a {
 @media only screen and (min-width: 1050px) {
   .main {
     height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .main .content {
+    background: var(--primary-color);
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .main .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0;
+  }
+  .main .content p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .main .content .social {
+    display: none;
+  }
+  .main .content .resume {
+    text-align: center;
+    margin: unset;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 2.5em;
+    position: relative;
+    top: -2em;
+  }
+  .main .main-svg {
+    display: block;
+    position: relative;
+    right: 15em;
+    max-width: 38em;
   }
   .nav-bar {
     display: -ms-grid;
