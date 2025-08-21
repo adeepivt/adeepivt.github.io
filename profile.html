@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEEP I V T - Python Developer</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SPLASH SCREEN -->
+    <div class="splash" id="splashScreen">
+        <!-- Code rain background -->
+        <div class="code-rain" id="codeRain"></div>
+
+        <!-- Terminal window -->
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="terminal-title">adeepivt@portfolio:~$</div>
+            </div>
+
+            <div class="terminal-body">
+                <!-- Logo container -->
+                <div class="logo-container">
+                    <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" width="200" height="190"
+                        viewBox="0 0 313 191">
+                        <g id="Group_2" data-name="Group 2" transform="translate(-796 -354)">
+                            <g id="Group_1" data-name="Group 1" transform="translate(307 84)">
+                                <line class="transition3" id="Line_2" data-name="Line 2" x1="73.302" y2="101.77"
+                                    transform="matrix(1,0,0,1,585.5360107421875,384.44)" fill="none"
+                                    stroke-linecap="round" data-svg-origin="0 0" style="transform-origin: 0px 0px;">
+                                </line>
+                                <line class="transition3" id="Line_3" data-name="Line 3" x2="18.339" y2="128.512"
+                                    transform="matrix(0.755,-0.656,0.656,0.755,585.8709716796875,392.451)" fill="none"
+                                    stroke-linecap="round" data-svg-origin="0 0" style="transform-origin: 0px 0px;">
+                                </line>
+                                <line class="transition3" id="Line_4" data-name="Line 4" y2="72.045"
+                                    transform="matrix(1,0,0,1,683.8510131835938,405.16)" fill="none"
+                                    stroke-linecap="round" data-svg-origin="0 0" style="transform-origin: 0px 0px;">
+                                </line>
+                                <line class="transition3" id="Line_5" data-name="Line 5" y2="75.261"
+                                    transform="matrix(1,0,0,1,712.06298828125,384.576)" fill="none"
+                                    stroke-linecap="round" data-svg-origin="0 0" style="transform-origin: 0px 0px;">
+                                </line>
+                                <line class="transition4" id="Line_6" data-name="Line 6" y2="155.594"
+                                    transform="matrix(0,1,-1,0,777.891,377.5)" fill="none" stroke-linecap="round"
+                                    data-svg-origin="0 0" style="transform-origin: 0px 0px;"></line>
+                                <line class="transition4" id="Line_7" data-name="Line 7" y2="155.594"
+                                    transform="matrix(0,1,-1,0,700.094,492)" fill="none" stroke-linecap="round"
+                                    data-svg-origin="0 0" style="transform-origin: 0px 0px;"></line>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Developer info -->
+                <div class="dev-info">
+                    <h1 class="dev-name">ADEEP I V T</h1>
+                    <h2 class="dev-title">Python Developer</h2>
+                </div>
+            </div>
+
+            <!-- Terminal command -->
+            <div class="terminal-command">
+                <span class="prompt">adeepivt@portfolio:~$</span> npm start --portfolio
+                <span class="cursor">|</span>
+            </div>
+        </div>
+
+        <!-- Loading indicator -->
+        <div class="loading-container">
+            <div class="loading-text">Initializing portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN PORTFOLIO -->
+    <div class="main-portfolio" id="mainPortfolio">
+        <div class="browser" id="browser-app">
+            <div class="browser-header">
+                <!-- Global tooltip positioned in center of browser-header -->
+                <div id="global-tooltip"></div>
+
+                <div class="browser-btns">
+                    <div class="browser-btn red"></div>
+                    <div class="browser-btn yellow"></div>
+                    <div class="browser-btn green"></div>
+                </div>
+                <div class="browser-url">https://adeepivt.dev/portfolio</div>
+
+                <!-- Header Social Links -->
+                <div class="header-social">
+                    <a href="https://linkedin.com/in/adeepivt" target="_blank" rel="noopener" title="LinkedIn"
+                        aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/adeepivt" target="_blank" rel="noopener" title="GitHub"
+                        aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/adeepivt" target="_blank" rel="noopener" title="Twitter" aria-label="Twitter Profile">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                    <a href="mailto:adeepivt@gmail.com" title="Email" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="browser-main">
+                <!-- Status indicator with tech-specific actions and icons -->
+                <div class="status-bar" aria-live="polite">
+                    <div class="status-dot"></div>
+                    <span class="status-text">
+                        <span id="status-icon"></span>
+                        <span id="status-action">Loading . . .</span>
+                        <span id="cycling-tech"></span>
+                    </span>
+                </div>
+
+                <div class="main-profile">
+                    <img src="profile.png" alt="Adeep I V T" class="profile-pic" />
+                    <div>
+                        <div class="main-title">ADEEP I V T</div>
+                        <div class="main-role" id="role-text"></div>
+                    </div>
+                </div>
+                <div class="main-desc">
+                    Started with <strong>Python & Django</strong>, fell in love with <strong>Odoo
+                        development</strong>.<br>
+                    <strong>3+ years</strong> of transforming business requirements into elegant ERP solutions.<br>
+                    Currently diving deep into <strong>high-performance APIs, cloud architecture & modern
+                        deployment</strong>
+                    <i>—because exceptional backends deserve exceptional infrastructure.</i>
+                </div>
+
+                <!-- Compact horizontal divider line -->
+                <div class="tech-stack-divider"></div>
+
+                <div class="main-icons-skillset-bar" title="Tech Stack" aria-label="Tech stack icons">
+                    <span class="tech-stack-label">Proficiencies :</span>
+                    <i class="fab fa-python" title="Django" aria-label="Django"></i>
+                    <i class="fas fa-dot-circle" title="Odoo ERP" aria-label="Odoo"></i>
+                    <i class="fas fa-bolt" title="FastAPI" aria-label="FastAPI"></i>
+                    <i class="fas fa-database" title="PostgreSQL" aria-label="PostgreSQL"></i>
+                    <i class="fab fa-docker" title="Docker" aria-label="Docker"></i>
+                    <!-- <i class="fab fa-aws" title="AWS" aria-label="AWS"></i> -->
+                    <i class="fas fa-memory" title="Redis" aria-label="Redis"></i>
+                </div>
+            </div>
+
+            <div class="tab-bar" role="tablist">
+                <button class="devtool-tab active" data-tab="elements" tabindex="0" role="tab" aria-selected="true"
+                    aria-controls="tab-elements">Structure</button>
+                <button class="devtool-tab" data-tab="console" tabindex="0" role="tab" aria-selected="false"
+                    aria-controls="tab-console">Terminal</button>
+                <button class="devtool-tab" data-tab="network" tabindex="0" role="tab" aria-selected="false"
+                    aria-controls="tab-network">Projects</button>
+                <button class="devtool-tab" data-tab="experience" tabindex="0" role="tab" aria-selected="false"
+                    aria-controls="tab-experience">Experience</button>
+            </div>
+
+            <div class="devtools">
+                <!-- Scroll indicator -->
+                <div class="scroll-indicator" id="scroll-indicator" title="Scroll down for more content">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Structure Tab (Enhanced with Education/Certifications) -->
+                <div class="devtool-content dev-html active" id="tab-elements" role="tabpanel" tabindex="0"
+                    aria-labelledby="elements">
+                    <span class="comment">&lt;!-- Personal branding markup --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"developer"</span><span class="tag">&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;h1&gt;</span>Adeep I V T<span class="tag">&lt;/h1&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;h2&gt;</span>Python Developer<span class="tag">&lt;/h2&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"location"</span><span class="tag">&gt;</span>📍 Based in India<span
+                        class="tag">&lt;/div&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"status"</span><span class="tag">&gt;</span>🟢 Available for opportunities<span
+                        class="tag">&lt;/div&gt;</span><br>
+                    <span class="tag">&lt;/section&gt;</span><br><br>
+
+                    <span class="comment">&lt;!-- Educational Background --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"education"</span><span class="tag">&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;h3&gt;</span>Education<span class="tag">&lt;/h3&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"degree"</span><span class="tag">&gt;</span>Master of Computer
+                    Applications(MCA)<span class="tag">&lt;/div&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"university"</span><span class="tag">&gt;</span>Indira Gandhi National Open
+                    University<span class="tag">&lt;/div&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"year"</span><span class="tag">&gt;</span>Graduated: 2023<span
+                        class="tag">&lt;/div&gt;</span><br>
+                    <span class="tag">&lt;/section&gt;</span><br><br>
+
+                    <span class="comment">&lt;!-- Professional Certifications --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"certifications"</span><span class="tag">&gt;</span><br>
+                    <!-- &nbsp;<span class="tag">&lt;h3&gt;</span>Professional Certifications<span
+                        class="tag">&lt;/h3&gt;</span><br>
+
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"cert-category"</span><span class="tag">&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;h4&gt;</span>☁️ Cloud & Infrastructure<span
+                        class="tag">&lt;/h4&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;ul&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="aws-sa">AWS Solutions Architect Associate</span><span
+                        class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="aws-dev">AWS Developer Associate</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="docker-dca">Docker Certified Associate</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="k8s-cka">Kubernetes Administrator (CKA)</span><span
+                        class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="terraform">Terraform Associate</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;/div&gt;</span><br> -->
+
+                    &nbsp;<span class="tag">&lt;div</span> <span class="attr">class=</span><span
+                        class="value">"cert-category"</span><span class="tag">&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;h4&gt;</span>💻 Programming & Development<span
+                        class="tag">&lt;/h4&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;ul&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="mongodb">FastAPI, RESTful APIs using Python - Udemy</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="python-pcap">Build a Backend REST API with Python & Django - Udemy</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <span class="cert-item"
+                        data-cert="nodejs">Python for Everybody(University of Michigan) - Coursera</span><span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;/div&gt;</span><br>
+
+                    <span class="tag">&lt;/section&gt;</span><br><br>
+
+
+
+                    <span class="comment">&lt;!-- Core Competencies --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"competencies"</span><span class="tag">&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;h3&gt;</span>Core Competencies<span class="tag">&lt;/h3&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;ul&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>⚡ <strong>High-Performance API Development</strong> -
+                    FastAPI and asynchronous programming<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏢 <strong>Enterprise ERP Solutions</strong> - Odoo
+                    customization and module architecture<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🔧 <strong>Backend System Design</strong> - Scalable
+                    architecture and microservices patterns<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>💾 <strong>Data Management</strong> - PostgreSQL, ORM
+                    optimization, and query performance<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🔄 <strong>System Integration</strong> - Third-party
+                    APIs and automated workflows<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>📈 <strong>Performance Optimization</strong> - Code
+                    efficiency and production scalability<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+                    <span class="tag">&lt;/section&gt;</span><br><br>
+
+
+                    <span class="comment">&lt;!-- Notable Achievements --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"achievements"</span><span class="tag">&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;h3&gt;</span>Notable Achievements<span
+                        class="tag">&lt;/h3&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;ul&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🏆 <strong>Employee of Quarter Q4 2022</strong> -
+                    Recognition for outstanding performance and dedication<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>⚙️ <strong>Production Module Development</strong> -
+                    Created 3 enterprise-grade Odoo modules, successfully deployed to the Odoo marketplace<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🚀 <strong>System Performance Enhancement</strong> -
+                    Optimized database queries reducing response time by 35%<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>🔧 <strong>Integration Architecture</strong> -
+                    Successfully connected Odoo with 6+ external APIs and services<span
+                        class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>📈 <strong>Continuous Learning</strong> - Mastered
+                    Django framework and actively advancing FastAPI skills<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>⏱️ <strong>Delivery Excellence</strong> - Maintained
+                    98% on-time delivery rate across all assigned projects<span class="tag">&lt;/li&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+                    <span class="tag">&lt;/section&gt;</span><br><br>
+
+
+                    <span class="comment">&lt;!-- Contact markup --&gt;</span><br>
+                    <span class="tag">&lt;section</span> <span class="attr">id=</span><span
+                        class="value">"contact"</span><span class="tag">&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;a</span> <span class="attr">href=</span><span
+                        class="value">"mailto:adeepivt@gmail.com"</span><span class="tag">&gt;</span>Email<span
+                        class="tag">&lt;/a&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;a</span> <span class="attr">href=</span><span
+                        class="value">"https://linkedin.com/in/adeepivt"</span><span
+                        class="tag">&gt;</span>LinkedIn<span class="tag">&lt;/a&gt;</span><br>
+                    &nbsp;<span class="tag">&lt;a</span> <span class="attr">href=</span><span
+                        class="value">"https://github.com/adeepivt"</span><span class="tag">&gt;</span>GitHub<span
+                        class="tag">&lt;/a&gt;</span><br>
+                    <span class="tag">&lt;/section&gt;</span>
+                </div>
+
+                <!-- Terminal Tab (formerly Console) with Selective Typewriter Effect -->
+                <div class="devtool-content dev-console" id="tab-console" role="tabpanel" tabindex="0"
+                    aria-labelledby="console">
+                    <div class="log"><span class="cmd">&gt;</span> <span class="key">Loading developer
+                            terminal...</span></div>
+                    <div class="log success">🔄 Initializing portfolio data...</div>
+                    <!-- Selective typewriter content will be dynamically added here -->
+                </div>
+
+                <!-- Projects Tab (formerly Network) -->
+                <div class="devtool-content dev-network" id="tab-network" role="tabpanel" tabindex="0"
+                    aria-labelledby="network">
+                    <div class="net-request" tabindex="0"
+                        data-tooltip="Multi-tenant SaaS platform, JWT auth + rate limiting, 10k+ active users, $2M+ processed">
+                        <span class="get">GET</span>
+                        <span class="proj-title" data-url="https://apimarketplace.example.com" role="link"
+                            tabindex="0">/projects/api-marketplace</span>
+                        <span class="proj-tag">Node.js</span>
+                        <span class="proj-tag">PostgreSQL</span>
+                        <span class="proj-tag">Redis</span>
+                        <span class="proj-tag">AWS</span>
+                        <span class="res">200 OK</span>
+                    </div>
+                    <div class="desc">├── Multi-tenant SaaS platform<br>├── JWT authentication + rate limiting<br>├──
+                        10k+ active users, $2M+ processed<br>└── Tech: Node.js, PostgreSQL, Redis, AWS</div>
+
+                    <div class="net-request" tabindex="0"
+                        data-tooltip="Real-time device management, MQTT + REST API hybrid architecture, 1,200+ connected devices">
+                        <span class="get">GET</span>
+                        <span class="proj-title" data-url="https://iot.example.com" role="link"
+                            tabindex="0">/projects/iot-control-system</span>
+                        <span class="proj-tag">FastAPI</span>
+                        <span class="proj-tag">MongoDB</span>
+                        <span class="proj-tag">Docker</span>
+                        <span class="proj-tag">MQTT</span>
+                        <span class="res">200 OK</span>
+                    </div>
+                    <div class="desc">├── Real-time device management<br>├── MQTT + REST API hybrid architecture<br>├──
+                        1,200+ connected devices<br>└── Tech: FastAPI, MongoDB, Docker, MQTT</div>
+
+                    <div class="net-request" tabindex="0"
+                        data-tooltip="Secure payment processing, Stripe integration with webhooks, Idempotent transaction handling">
+                        <span class="post">POST</span>
+                        <span class="proj-title" data-url="https://payments.example.com" role="link"
+                            tabindex="0">/projects/payment-microservice</span>
+                        <span class="proj-tag">Django</span>
+                        <span class="proj-tag">Redis</span>
+                        <span class="proj-tag">Celery</span>
+                        <span class="proj-tag">Stripe API</span>
+                        <span class="res">201 Created</span>
+                    </div>
+                    <div class="desc">├── Secure payment processing<br>├── Stripe integration with webhooks<br>├──
+                        Idempotent transaction handling<br>└── Tech: Django, Redis, Celery, Stripe API</div>
+
+                    <div class="net-request" tabindex="0" data-tooltip="Open source projects and repositories">
+                        <span class="get">GET</span>
+                        <span class="proj-title" data-url="https://github.com/adeepivt" role="link"
+                            tabindex="0">/github.com/adeepivt</span>
+                        <span class="proj-tag">Open Source</span>
+                        <span class="res">301 Redirect</span>
+                    </div>
+                    <div class="desc">└── 50+ repositories, 15+ production projects</div>
+                </div>
+
+                <!-- Experience Tab -->
+                <div class="devtool-content dev-experience" id="tab-experience" role="tabpanel" tabindex="0"
+                    aria-labelledby="experience">
+                    <div class="timeline" aria-label="Experience timeline">
+                        <div class="exp-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div class="exp-head">
+                                <div class="role"><i class="fa-solid fa-briefcase"></i> Senior Backend Engineer</div>
+                                <div class="company">@ Infintor Solutions</div>
+                                <div class="period">2024 Jan — 2025 May</div>
+                            </div>
+                            <div class="exp-body">
+                                Led platform services powering 10k+ daily active users. Designed multi-tenant API
+                                gateway and event-driven billing.
+                                <ul>
+                                    <li>Shipped rate-limited, JWT-secured GraphQL & REST gateway</li>
+                                    <li>Cut p95 latency by 38% via Redis caching and async IO</li>
+                                    <li>IaC with Terraform; GitHub Actions CI/CD to AWS ECS</li>
+                                </ul>
+                                <div class="chip-row">
+                                    <span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span
+                                        class="chip">Redis</span>
+                                    <span class="chip">AWS</span><span class="chip">Terraform</span><span
+                                        class="chip">gRPC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div class="exp-head">
+                                <div class="role"><i class="fa-solid fa-server"></i> Junior Software Programmer</div>
+                                <div class="company">@ ONTASH</div>
+                                <div class="period">2021 Dec — 2023 Dec</div>
+                            </div>
+                            <div class="exp-body">
+                                Built real-time device control backend (MQTT + REST) for 1,200+ devices with audit
+                                trails and observability.
+                                <ul>
+                                    <li>FastAPI microservices with Celery for long-running tasks</li>
+                                    <li>Observability: Prometheus + Grafana; SLOs with alerting</li>
+                                    <li>Edge-safe rollouts and blue/green deploys</li>
+                                </ul>
+                                <div class="chip-row">
+                                    <span class="chip">FastAPI</span><span class="chip">Docker</span><span
+                                        class="chip">MongoDB</span>
+                                    <span class="chip">MQTT</span><span class="chip">Prometheus</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div class="exp-head">
+                                <div class="role"><i class="fa-solid fa-credit-card"></i> Training</div>
+                                <div class="company">@ Quest Innovations</div>
+                                <div class="period">2019 Aug — 2020 Feb</div>
+                            </div>
+                            <div class="exp-body">
+                                Built concurrency-safe payment flows, ledgering, and webhooks for SaaS billing.
+                                <ul>
+                                    <li>Django services; idempotent webhook processing</li>
+                                    <li>Stripe integrations with retries and dead-letter queues</li>
+                                    <li>Reduced charge failures by 24% with async reconciliation</li>
+                                </ul>
+                                <div class="chip-row">
+                                    <span class="chip">Django</span><span class="chip">Redis</span><span
+                                        class="chip">Stripe</span>
+                                    <span class="chip">Celery</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div class="exp-head">
+                                <div class="role"><i class="fa-solid fa-graduation-cap"></i> Intern, Backend</div>
+                                <div class="company">@ CloudStart</div>
+                                <div class="period">2017 — 2018</div>
+                            </div>
+                            <div class="exp-body">
+                                Helped modernize monolith to services; wrote integration tests, dashboards, and small
+                                features.
+                                <div class="chip-row">
+                                    <span class="chip">Python</span><span class="chip">Flask</span><span
+                                        class="chip">SQL</span>
+                                </div>
+                                <div style="margin-top:8px;">
+                                    Portfolio: <span class="exp-link" data-url="https://adeepivt.dev/resume">Resume
+                                        (PDF)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
