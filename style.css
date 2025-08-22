@@ -561,7 +561,7 @@
            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
            z-index: 1000;
            font-family: 'Inter', sans-serif;
-           max-width: 400px;
+           max-width: 450px;
            text-align: center;
        }
 
@@ -1269,7 +1269,7 @@
            }
 
            .devtool-content {
-               padding: var(--pad-y) 16px 50px 16px;
+               padding: var(--pad-y) 16px 80px 16px;
            }
 
            .main-icons-skillset-bar {
@@ -1315,7 +1315,7 @@
            #global-tooltip {
                font-size: 0.8em;
                padding: 6px 12px;
-               max-width: 300px;
+               max-width: 360px;
            }
 
            .header-social {
@@ -1782,6 +1782,10 @@
                padding: 16px 4vw 12px 4vw;
            }
 
+           .devtool-content {
+               padding: var(--pad-y) 20px 80px 18px;
+           }
+
            /* FIXED: Keep profile side-by-side */
            .main-profile {
                flex-direction: row !important;
@@ -2207,7 +2211,7 @@
            }
 
            .devtool-content {
-               padding: 12px 12px 25px 10px !important;
+               padding: 12px 12px 80px 10px !important;
            }
 
            .status-bar {
@@ -2470,7 +2474,7 @@
            #global-tooltip {
                font-size: 0.75em;
                padding: 4px 8px;
-               max-width: 250px;
+               max-width: 350px;
                border-radius: 4px;
            }
        }
@@ -2522,7 +2526,7 @@
            }
 
            .devtool-content {
-               padding: 10px 10px 20px 8px !important;
+               padding: 10px 10px 80px 8px !important;
            }
 
            .devtool-tab {
@@ -2619,6 +2623,10 @@
 
        /* Alternative layout for very small screens - if horizontal gets too cramped */
        @media (max-width: 320px) {
+           .devtool-content {
+               padding: 8px 8px 80px 6px !important;
+           }
+
            .net-request {
                flex-direction: column !important;
                align-items: flex-start !important;

@@ -672,70 +672,94 @@ function initScrollIndicators() {
 function initCertificateButtons() {
     // Certificate data (same as before)
     const certificateData = {
-        'aws-sa': {
-            title: 'AWS Certified Solutions Architect - Associate',
-            issuer: 'Amazon Web Services (AWS)',
-            date: 'Issued: March 2023 | Valid until: March 2026',
-            badge: 'Associate Level',
-            icon: 'fas fa-award',
-            link: 'https://www.credly.com/badges/your-aws-badge-id'
+        // 'aws-sa': {
+        //     title: 'AWS Certified Solutions Architect - Associate',
+        //     issuer: 'Amazon Web Services (AWS)',
+        //     date: 'Issued: March 2023 | Valid until: March 2026',
+        //     badge: 'Associate Level',
+        //     icon: 'fas fa-award',
+        //     link: 'https://www.credly.com/badges/your-aws-badge-id'
+        // },
+        // 'aws-dev': {
+        //     title: 'AWS Certified Developer - Associate',
+        //     issuer: 'Amazon Web Services (AWS)',
+        //     date: 'Issued: January 2023 | Valid until: January 2026',
+        //     badge: 'Developer Track',
+        //     icon: 'fas fa-code',
+        //     link: 'https://www.credly.com/badges/your-aws-dev-badge-id'
+        // },
+        // 'docker-dca': {
+        //     title: 'Docker Certified Associate (DCA)',
+        //     issuer: 'Docker, Inc.',
+        //     date: 'Issued: February 2023 | Valid until: February 2025',
+        //     badge: 'Container Expert',
+        //     icon: 'fas fa-container',
+        //     link: 'https://credentials.docker.com/your-docker-credential'
+        // },
+        // 'k8s-cka': {
+        //     title: 'Certified Kubernetes Administrator',
+        //     issuer: 'Cloud Native Computing Foundation',
+        //     date: 'Issued: April 2023 | Valid until: April 2026',
+        //     badge: 'K8s Admin',
+        //     icon: 'fas fa-network-wired',
+        //     link: 'https://www.credly.com/badges/your-cka-badge-id'
+        // },
+        // 'terraform': {
+        //     title: 'HashiCorp Certified: Terraform Associate',
+        //     issuer: 'HashiCorp',
+        //     date: 'Issued: May 2023 | Valid until: May 2025',
+        //     badge: 'Infrastructure as Code',
+        //     icon: 'fas fa-tools',
+        //     link: 'https://www.credly.com/badges/your-terraform-badge-id'
+        // },
+        // 'mongodb': {
+        //     title: 'MongoDB Certified Developer Associate',
+        //     issuer: 'MongoDB University',
+        //     date: 'Issued: December 2022 | Valid until: December 2025',
+        //     badge: 'NoSQL Expert',
+        //     icon: 'fas fa-database',
+        //     link: 'https://university.mongodb.com/certification/your-mongodb-cert'
+        // },
+        'fastapi': {
+            title: 'FastAPI - The Complete Course',
+            issuer: 'Eric Roby | Udemy',
+            date: 'Issued: August 2025 | Valid until: No Expiry',
+            badge: 'FastAPI Expert',
+            icon: 'fas fa-bolt',
+            link: 'https://www.udemy.com/certificate/UC-05b70ccf-4097-4245-a59c-4482a029279e/'
         },
-        'aws-dev': {
-            title: 'AWS Certified Developer - Associate',
-            issuer: 'Amazon Web Services (AWS)',
-            date: 'Issued: January 2023 | Valid until: January 2026',
-            badge: 'Developer Track',
-            icon: 'fas fa-code',
-            link: 'https://www.credly.com/badges/your-aws-dev-badge-id'
-        },
-        'docker-dca': {
-            title: 'Docker Certified Associate (DCA)',
-            issuer: 'Docker, Inc.',
-            date: 'Issued: February 2023 | Valid until: February 2025',
-            badge: 'Container Expert',
-            icon: 'fas fa-container',
-            link: 'https://credentials.docker.com/your-docker-credential'
-        },
-        'k8s-cka': {
-            title: 'Certified Kubernetes Administrator',
-            issuer: 'Cloud Native Computing Foundation',
-            date: 'Issued: April 2023 | Valid until: April 2026',
-            badge: 'K8s Admin',
-            icon: 'fas fa-network-wired',
-            link: 'https://www.credly.com/badges/your-cka-badge-id'
-        },
-        'terraform': {
-            title: 'HashiCorp Certified: Terraform Associate',
-            issuer: 'HashiCorp',
-            date: 'Issued: May 2023 | Valid until: May 2025',
-            badge: 'Infrastructure as Code',
-            icon: 'fas fa-tools',
-            link: 'https://www.credly.com/badges/your-terraform-badge-id'
-        },
-        'mongodb': {
-            title: 'MongoDB Certified Developer Associate',
-            issuer: 'MongoDB University',
-            date: 'Issued: December 2022 | Valid until: December 2025',
-            badge: 'NoSQL Expert',
-            icon: 'fas fa-database',
-            link: 'https://university.mongodb.com/certification/your-mongodb-cert'
-        },
-        'python-pcap': {
-            title: 'PCAP – Certified Associate in Python Programming',
-            issuer: 'Python Institute',
-            date: 'Issued: November 2022 | Valid until: November 2025',
-            badge: 'Python Certified',
+        'django': {
+            title: 'Build a Backend REST API with Python & Django',
+            issuer: 'Mark Winterbottom, Brooke Rutherford | Udemy',
+            date: 'Issued: November 2022 | Valid until: Lifetime',
+            badge: 'Django REST API Specialist',
             icon: 'fab fa-python',
-            link: 'https://pythoninstitute.org/certification/pcap-certification-associate/verify/'
+            link: 'https://www.udemy.com/certificate/UC-05b70ccf-4097-4245-a59c-4482a029279e/'
         },
-        'nodejs': {
-            title: 'OpenJS Node.js Application Developer',
-            issuer: 'Linux Foundation & OpenJS Foundation',
-            date: 'Issued: October 2022 | Valid until: October 2024',
-            badge: 'Node.js Expert',
-            icon: 'fab fa-node-js',
-            link: 'https://www.credly.com/badges/your-nodejs-badge-id'
-        }
+        'python': {
+            title: 'Python for Everybody Specialization',
+            issuer:'University of Michigan | Coursera',
+            date: 'Issued: November 2021 | Valid until: No Expiry',
+            badge: 'Python Expert',
+            icon: 'fab fa-python',
+            link: 'https://coursera.org/share/fc7528e657fe02f7191ddf6da81a7332'
+        },
+        // 'python-pcap': {
+        //     title: 'PCAP – Certified Associate in Python Programming',
+        //     issuer: 'Python Institute',
+        //     date: 'Issued: November 2022 | Valid until: November 2025',
+        //     badge: 'Python Certified',
+        //     icon: 'fab fa-python',
+        //     link: 'https://pythoninstitute.org/certification/pcap-certification-associate/verify/'
+        // },
+        // 'nodejs': {
+        //     title: 'OpenJS Node.js Application Developer',
+        //     issuer: 'Linux Foundation & OpenJS Foundation',
+        //     date: 'Issued: October 2022 | Valid until: October 2024',
+        //     badge: 'Node.js Expert',
+        //     icon: 'fab fa-node-js',
+        //     link: 'https://www.credly.com/badges/your-nodejs-badge-id'
+        // }
     };
 
     // Add click listeners to certificate text
