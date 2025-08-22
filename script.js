@@ -528,6 +528,117 @@ function initClickableElements() {
         row.addEventListener('focus', () => row.classList.add('hover'));
         row.addEventListener('blur', () => row.classList.remove('hover'));
     });
+
+    // Make contact links in Elements tab clickable
+    initContactLinks();
+}
+
+function initContactLinks() {
+    // Find the Elements tab content
+    const elementsTab = document.getElementById('tab-elements');
+    if (!elementsTab) return;
+
+    // Contact link data
+    const contactLinks = {
+        'mailto:adeepivt@gmail.com': 'mailto:adeepivt@gmail.com',
+        'https://linkedin.com/in/adeepivt': 'https://linkedin.com/in/adeepivt',
+        'https://github.com/adeepivt': 'https://github.com/adeepivt'
+    };
+
+    // Find all spans with href values and make them clickable
+    elementsTab.addEventListener('click', function(e) {
+        const target = e.target;
+        
+        // Check if clicked element is a value span containing a URL
+        if (target.classList.contains('value')) {
+            const href = target.textContent.replace(/"/g, ''); // Remove quotes
+            
+            // Check if it's one of our contact links
+            if (contactLinks[href]) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Open the link
+                if (href.startsWith('mailto:')) {
+                    // For email, open default mail client
+                    window.location.href = href;
+                } else {
+                    // For other links, open in new tab
+                    window.open(href, '_blank', 'noopener noreferrer');
+                }
+                
+                // Visual feedback
+                target.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    target.style.transform = 'scale(1)';
+                }, 150);
+            }
+        }
+        
+        // Also check if clicked on the text content (Email, LinkedIn, GitHub)
+        if (target.textContent === 'Email' || target.textContent === 'LinkedIn' || target.textContent === 'GitHub') {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Find the corresponding href value
+            let linkElement = target;
+            while (linkElement && !linkElement.classList.contains('tag')) {
+                linkElement = linkElement.previousElementSibling;
+            }
+            
+            // Look for the href value in the same line
+            const parentLine = target.closest('br')?.parentElement || target.parentElement;
+            const valueSpan = parentLine?.querySelector('.value');
+            
+            if (valueSpan) {
+                const href = valueSpan.textContent.replace(/"/g, '');
+                
+                if (contactLinks[href]) {
+                    if (href.startsWith('mailto:')) {
+                        window.location.href = href;
+                    } else {
+                        window.open(href, '_blank', 'noopener noreferrer');
+                    }
+                    
+                    // Visual feedback
+                    target.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        target.style.transform = 'scale(1)';
+                    }, 150);
+                }
+            }
+        }
+    });
+
+    // Add hover effects to make it clear these are clickable
+    elementsTab.addEventListener('mouseover', function(e) {
+        const target = e.target;
+        
+        if (target.classList.contains('value')) {
+            const href = target.textContent.replace(/"/g, '');
+            if (contactLinks[href]) {
+                target.style.cursor = 'pointer';
+                target.style.textDecoration = 'underline';
+            }
+        }
+        
+        if (target.textContent === 'Email' || target.textContent === 'LinkedIn' || target.textContent === 'GitHub') {
+            target.style.cursor = 'pointer';
+            target.style.textDecoration = 'underline';
+        }
+    });
+
+    elementsTab.addEventListener('mouseout', function(e) {
+        const target = e.target;
+        
+        if (target.classList.contains('value')) {
+            target.style.textDecoration = 'none';
+        }
+        
+        if (target.textContent === 'Email' || target.textContent === 'LinkedIn' || target.textContent === 'GitHub') {
+            target.style.textDecoration = 'none';
+        }
+    });
 }
 
 function initScrollIndicators() {
