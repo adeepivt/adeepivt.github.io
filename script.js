@@ -416,9 +416,9 @@ function typeText(element, text, delay, callback) {
 function addRemainingContentInstantly(container) {
     // All the remaining content appears instantly
     const remainingContent = [
-        { content: '✅ Successfully deployed 12+ custom Odoo modules in production', className: 'log success' },
+        { content: '✅ Successfully deployed 3 custom Odoo modules in production', className: 'log success' },
         { content: '⚡ Performance: Optimized ERP workflows reducing processing time by 40%', className: 'log success' },
-        { content: '🏢 Business Impact: Automated 15+ manual processes saving 25+ hours weekly', className: 'log success' },
+        { content: '🏢 Business Impact: Automated 5+ manual processes saving 25+ hours weekly', className: 'log success' },
         { content: '🔧 Integration: Connected Odoo with third-party systems and APIs', className: 'log success' },
         { content: '<span class="cmd">></span> <span class="key">developer.achievements</span>', className: 'log' },
         {
@@ -427,13 +427,14 @@ function addRemainingContentInstantly(container) {
             style: 'margin-left: 20px; color: #ce9178;'
         },
         { content: '⚠️ Always remember: Test in production... just kidding!', className: 'log warn' },
-        { content: '🚀 Next deployment scheduled for tonight', className: 'log success' },
+        { content: '🚀 Turning coffee into clean code since 2020', className: 'log success' },
+        { content: '⚙️ "My code works on my machine... and yours too!"', className: 'log success' },
         { content: '<span class="cmd">></span> <span class="key">developer.currentStack</span>', className: 'log' },
         { content: '["Python", "Odoo Framework", "PostgreSQL", "Django", "FastAPI", "XML/QWeb"]', className: 'log', style: 'color: #ce9178;' },
         { content: '<span class="cmd">></span> <span class="key">developer.learning()</span>', className: 'log' },
         { content: '"Currently exploring: FastAPI, AWS and Docker"', className: 'log', style: 'color: #ce9178;' },
         { content: '<span class="cmd">></span> <span class="key">developer.expertise</span>', className: 'log' },
-        { content: '"ERP Development | Business Process Automation | Custom Module Creation"', className: 'log', style: 'color: #ce9178;' },
+        { content: '"ERP Development | Business Process Automation | Odoo Module Customization | API Integration"', className: 'log', style: 'color: #ce9178;' },
         { content: '<span class="cmd">></span> <span class="key">contact</span>', className: 'log' }
     ];
 
@@ -724,9 +725,9 @@ function initCertificateButtons() {
             title: 'FastAPI - The Complete Course',
             issuer: 'Eric Roby | Udemy',
             date: 'Issued: August 2025 | Valid until: No Expiry',
-            badge: 'FastAPI Expert',
+            badge: 'FastAPI Mastery',
             icon: 'fas fa-bolt',
-            link: 'https://www.udemy.com/certificate/UC-05b70ccf-4097-4245-a59c-4482a029279e/'
+            link: 'https://www.udemy.com/certificate/UC-e8f3d878-cf0f-4d67-8ac6-1e51ad6fc74f/'
         },
         'django': {
             title: 'Build a Backend REST API with Python & Django',
@@ -740,9 +741,17 @@ function initCertificateButtons() {
             title: 'Python for Everybody Specialization',
             issuer:'University of Michigan | Coursera',
             date: 'Issued: November 2021 | Valid until: No Expiry',
-            badge: 'Python Expert',
+            badge: 'Python Foundation',
             icon: 'fab fa-python',
             link: 'https://coursera.org/share/fc7528e657fe02f7191ddf6da81a7332'
+        },
+        'meta': {
+            title: 'Meta Back-End Developer Specialization',
+            issuer:'Meta | Coursera',
+            date: 'Issued: August 2025 | Valid until: No Expiry',
+            badge: 'Backend Developer',
+            icon: 'fab fa-python',
+            link: 'https://coursera.org/share/9f3254a8a82e1329f2ad77a6ec7214c9'
         },
         // 'python-pcap': {
         //     title: 'PCAP – Certified Associate in Python Programming',
