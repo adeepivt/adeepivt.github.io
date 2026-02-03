@@ -1,4 +1,4 @@
- // ==================== SPLASH SCREEN FUNCTIONS ====================
+// ==================== SPLASH SCREEN FUNCTIONS ====================
 
  function createCodeRain() {
     const codeRain = document.getElementById('codeRain');
